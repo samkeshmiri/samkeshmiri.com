@@ -1,3 +1,23 @@
+/*!
+  * Kursor v0.1.5
+  * Forged by Luis Daniel Rovira
+  * Released under the MIT License.
+  */
+
+/*! no static exports found */
+
+/*!**********************!*\
+      !*** ./src/index.js ***!
+      \**********************/
+
+/*!****************************!*\
+      !*** ./src/utils/index.js ***!
+      \****************************/
+
+/*!*******************************!*\
+      !*** ./src/styles/index.styl ***!
+      \*******************************/
+
 /**
  * @license React
  * react-dom-client.production.js
