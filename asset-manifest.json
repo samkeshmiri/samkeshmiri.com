@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e75aa1b.css",
+    "main.css": "/static/css/main.c0dc0780.css",
     "main.js": "/static/js/main.29ccebcc.js",
-    "static/media/Atop-R99O3.ttf": "/static/media/Atop-R99O3.c1863e962d56b2d2d579.ttf",
+    "static/media/GT-Pressura-Mono-Regular.ttf": "/static/media/GT-Pressura-Mono-Regular.2320ef8de2a13aa3703b.ttf",
     "index.html": "/index.html",
-    "main.4e75aa1b.css.map": "/static/css/main.4e75aa1b.css.map",
+    "main.c0dc0780.css.map": "/static/css/main.c0dc0780.css.map",
     "main.29ccebcc.js.map": "/static/js/main.29ccebcc.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e75aa1b.css",
+    "static/css/main.c0dc0780.css",
     "static/js/main.29ccebcc.js"
   ]
 }
