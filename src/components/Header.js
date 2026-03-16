@@ -26,6 +26,11 @@ export function createHeader() {
       icon: icons.x,
     }),
     createIconLink({
+      href: "https://open.spotify.com/user/xsammy_",
+      label: "Spotify",
+      icon: icons.spotify,
+    }),
+    createIconLink({
       href: "#top",
       label: "Back to top",
       imageSrc: "/s.png",
