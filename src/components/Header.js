@@ -31,15 +31,6 @@ export function createHeader() {
       icon: icons.spotify,
     }),
     createIconLink({
-      href: "#top",
-      label: "Back to top",
-      imageSrc: "/s.png",
-      imageAlt: "Sam Keshmiri home",
-      className: "site-header__home",
-      imageClassName: "site-header__image site-header__image--home",
-      external: false,
-    }),
-    createIconLink({
       href: "https://www.strava.com/athletes/23733930/",
       label: "Strava",
       icon: icons.strava,
