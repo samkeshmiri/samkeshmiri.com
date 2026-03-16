@@ -17,7 +17,7 @@ export function createBio() {
     },
   });
 
-  lede.append("I'm building the future of finance with ", aaveLink);
+  lede.append("I'm a backend engineer helping build the future of finance with ", aaveLink);
   section.append(title, lede);
 
   return section;
