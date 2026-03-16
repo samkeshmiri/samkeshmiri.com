@@ -31,11 +31,6 @@ export function createHeader() {
       icon: icons.spotify,
     }),
     createIconLink({
-      href: "https://www.strava.com/athletes/23733930/",
-      label: "Strava",
-      icon: icons.strava,
-    }),
-    createIconLink({
       href: "https://www.lensfrens.xyz/samthing",
       label: "Lens",
       imageSrc: "/lens_logo_dark.svg",
