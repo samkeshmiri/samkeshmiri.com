@@ -1,6 +1,6 @@
 import { createElement } from "../utils/dom.js";
 
-export function createBio({ onShowBooks, onShowMixes } = {}) {
+export function createBio({ onShowBooks } = {}) {
   const section = createElement("section", { className: "hero" });
   const title = createElement("h1", {
     className: "hero__title",
@@ -13,13 +13,6 @@ export function createBio({ onShowBooks, onShowMixes } = {}) {
     text: "A running list of books I've read and am reading",
     attrs: {
       href: "#books",
-    },
-  });
-  const mixesLink = createElement("a", {
-    className: "styled-link hero__page-link",
-    text: "Some DJ Mixes I've recorded",
-    attrs: {
-      href: "#mixes",
     },
   });
   const aaveLink = createElement("a", {
@@ -39,15 +32,8 @@ export function createBio({ onShowBooks, onShowMixes } = {}) {
     });
   }
 
-  if (onShowMixes) {
-    mixesLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      onShowMixes();
-    });
-  }
-
   lede.append("I'm a backend engineer helping build the future of finance with ", aaveLink);
-  links.append(booksLink, mixesLink);
+  links.append(booksLink);
   section.append(title, lede, links);
 
   return section;

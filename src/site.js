@@ -1,7 +1,6 @@
 import { createBio } from "./components/Bio.js";
 import { createBooksSection } from "./components/BooksSection.js";
 import { createHeader } from "./components/Header.js";
-import { createMixesSection } from "./components/MixesSection.js";
 import { createElement } from "./utils/dom.js";
 
 const app = document.querySelector("#app");
@@ -46,10 +45,6 @@ function getCurrentView() {
     return "books";
   }
 
-  if (window.location.hash === "#mixes") {
-    return "mixes";
-  }
-
   return "home";
 }
 
@@ -64,8 +59,6 @@ function navigate(view) {
 
   if (view === "books") {
     nextHash = "#books";
-  } else if (view === "mixes") {
-    nextHash = "#mixes";
   }
 
   const nextUrl = `${window.location.pathname}${window.location.search}${nextHash}`;
@@ -76,33 +69,14 @@ function navigate(view) {
 }
 
 function render(view) {
-  pauseActiveMedia();
-
   if (view === "books") {
     viewRoot.replaceChildren(createBooksSection());
-    return;
-  }
-
-  if (view === "mixes") {
-    viewRoot.replaceChildren(createMixesSection());
     return;
   }
 
   viewRoot.replaceChildren(
     createBio({
       onShowBooks: () => navigate("books"),
-      onShowMixes: () => navigate("mixes"),
     }),
   );
-}
-
-function pauseActiveMedia() {
-  const audio = viewRoot.querySelector("audio");
-
-  if (!audio) {
-    return;
-  }
-
-  audio.pause();
-  audio.currentTime = 0;
 }
