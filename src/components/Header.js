@@ -1,10 +1,19 @@
 import { createElement, createSvg } from "../utils/dom.js";
 import { icons } from "./icons.js";
 
-export function createHeader() {
+export function createHeader({ onShowHome } = {}) {
   const header = createElement("header", { className: "site-header" });
 
   header.append(
+    createIconLink({
+      href: "#top",
+      label: "Home",
+      imageSrc: "/s.png",
+      imageAlt: "Sam Keshmiri home",
+      imageClassName: "site-header__image--home",
+      external: false,
+      onClick: onShowHome,
+    }),
     createIconLink({
       href: "https://github.com/samkeshmiri",
       label: "GitHub",
@@ -44,6 +53,7 @@ function createIconLink({
   imageClassName = "site-header__image",
   className = "",
   external = true,
+  onClick,
 }) {
   const link = createElement("a", {
     className: ["site-header__link", className].filter(Boolean).join(" "),
@@ -55,6 +65,13 @@ function createIconLink({
       rel: external ? "noopener noreferrer" : null,
     },
   });
+
+  if (onClick) {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      onClick();
+    });
+  }
 
   if (imageSrc) {
     link.append(
