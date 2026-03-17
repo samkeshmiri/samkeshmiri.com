@@ -30,13 +30,6 @@ export function createHeader() {
       label: "Spotify",
       icon: icons.spotify,
     }),
-    createIconLink({
-      href: "https://www.lensfrens.xyz/samthing",
-      label: "Lens",
-      imageSrc: "/lens_logo_dark.svg",
-      imageAlt: "Lens",
-      imageClassName: "site-header__image site-header__image--lens",
-    }),
   );
 
   return header;
