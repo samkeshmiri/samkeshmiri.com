@@ -6,7 +6,7 @@ export function getDailyItems(date = new Date()) {
   return [
     {
       label: "Word of the day",
-      text: `${wordOfDay.word}: ${wordOfDay.definition}`,
+      text: `${wordOfDay.word} - ${wordOfDay.definition}`,
     },
   ];
 }
