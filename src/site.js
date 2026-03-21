@@ -1,5 +1,6 @@
 import { createBio } from "./components/Bio.js";
 import { createBooksSection } from "./components/BooksSection.js";
+import { createDailyBanner } from "./components/DailyBanner.js";
 import { createHeader } from "./components/Header.js";
 import { createElement } from "./utils/dom.js";
 
@@ -32,7 +33,7 @@ page.append(
   }),
   main,
 );
-app.append(page);
+app.append(createDailyBanner(), page);
 
 window.addEventListener("popstate", () => {
   render(getCurrentView());
