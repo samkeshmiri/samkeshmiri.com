@@ -226,13 +226,21 @@ a {
 }
 
 .reading-list__link {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
   padding: 16px 0 18px;
   text-decoration: none;
   transform-origin: left center;
   transition:
     transform 180ms ease,
     color 180ms ease;
+}
+
+.reading-list__copy {
+  min-width: 0;
+  flex: 1;
 }
 
 .reading-list__link:hover,
@@ -258,6 +266,14 @@ a {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.6;
+}
+
+.reading-list__cover {
+  width: 48px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 4px;
+  box-shadow: 0 10px 24px rgba(12, 28, 22, 0.12);
 }
 
 .site-footer {
@@ -292,6 +308,10 @@ a {
 
   .reading-list__link {
     padding: 14px 0 16px;
+  }
+
+  .reading-list__cover {
+    width: 42px;
   }
 }
 

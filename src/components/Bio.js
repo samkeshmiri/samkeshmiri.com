@@ -10,7 +10,7 @@ export function createBio({ onShowBooks } = {}) {
   const links = createElement("div", { className: "hero__links" });
   const booksLink = createElement("a", {
     className: "styled-link hero__page-link",
-    text: "A running list of books I've read and am reading",
+    text: "A list of what I'm reading",
     attrs: {
       href: "#books",
     },

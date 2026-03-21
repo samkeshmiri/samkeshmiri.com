@@ -38,6 +38,7 @@ function createBookItem(book) {
         }
       : {},
   });
+  const copy = createElement("div", { className: "reading-list__copy" });
   const heading = createElement("h3", {
     className: "reading-list__title",
     text: book.title,
@@ -47,7 +48,24 @@ function createBookItem(book) {
     text: `${book.author} • ${book.year}`,
   });
 
-  link.append(heading, meta);
+  copy.append(heading, meta);
+  link.append(copy);
+
+  if (book.coverImageUrl) {
+    const cover = createElement("img", {
+      className: "reading-list__cover",
+      attrs: {
+        src: book.coverImageUrl,
+        alt: "",
+        loading: "lazy",
+        decoding: "async",
+        width: book.coverImageWidth,
+        height: book.coverImageHeight,
+      },
+    });
+    link.append(cover);
+  }
+
   item.append(link);
   return item;
 }
