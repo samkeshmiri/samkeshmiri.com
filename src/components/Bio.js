@@ -7,10 +7,11 @@ export function createBio({ onShowBooks } = {}) {
     text: "Hey, I'm Sam.",
   });
   const lede = createElement("p", { className: "hero__lede" });
-  const links = createElement("div", { className: "hero__links" });
+  const work = createElement("p", { className: "hero__lede" });
+  const links = createElement("p", { className: "hero__links" });
   const booksLink = createElement("a", {
     className: "styled-link hero__page-link",
-    text: "A list of what I'm reading",
+    text: "Here's",
     attrs: {
       href: "#books",
     },
@@ -24,7 +25,6 @@ export function createBio({ onShowBooks } = {}) {
       rel: "noopener noreferrer",
     },
   });
-
   if (onShowBooks) {
     booksLink.addEventListener("click", (event) => {
       event.preventDefault();
@@ -32,9 +32,14 @@ export function createBio({ onShowBooks } = {}) {
     });
   }
 
-  lede.append("I'm a backend engineer helping build the future of finance with ", aaveLink);
-  links.append(booksLink);
-  section.append(title, lede, links);
+  lede.append("I'm from Manchester and currently living in London.");
+  work.append(
+    "I currently work at ",
+    aaveLink,
+    " as a backend engineer, bridging fiat and crypto through stablecoins.",
+  );
+  links.append(booksLink, " a list of books I'm reading.");
+  section.append(title, lede, work, links);
 
   return section;
 }

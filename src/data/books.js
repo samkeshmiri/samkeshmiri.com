@@ -28,4 +28,11 @@ export const books = [
     coverImageWidth: 256,
     coverImageHeight: 390,
   },
+  {
+    title: "One Day, Everyone Will Have Always Been Against This",
+    author: "Omar El Akkad",
+    year: "2025",
+    coverImageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/One_Day%2C_Everyone_Will_Have_Always_Been_Against_This_book_cover.jpg/250px-One_Day%2C_Everyone_Will_Have_Always_Been_Against_This_book_cover.jpg",
+  },
 ];
