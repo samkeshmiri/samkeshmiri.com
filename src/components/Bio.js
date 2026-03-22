@@ -32,7 +32,7 @@ export function createBio({ onShowBooks } = {}) {
     });
   }
 
-  lede.append("I'm from Manchester and currently living in London.");
+  lede.append("I'm from Manchester and living in London.");
   work.append(
     "I currently work at ",
     aaveLink,
