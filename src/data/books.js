@@ -420,5 +420,12 @@ export const books = [
     author: "Ben Malbon",
     year: "1999",
     coverImageUrl: "https://books.google.com/books/content?id=i_fHcomwelAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    title: "Speech Can Change Your Life",
+    author: "Dorothy Sarnoff",
+    year: "1970",
+    wikiUrl: "https://en.wikipedia.org/wiki/Dorothy_Sarnoff",
+    coverImageUrl: "https://books.google.com/books/content?id=4-tEAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
   }
 ];
