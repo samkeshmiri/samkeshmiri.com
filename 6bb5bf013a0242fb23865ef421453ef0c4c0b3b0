@@ -1,0 +1,25 @@
+src/data/wordBank.js
+  dcab21f421242be1 2843-2922
+scripts/generate-word-bank.mjs
+  dcab21f421242be1 32,60-154
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "6bb5bf013a0242fb23865ef421453ef0c4c0b3b0",
+  "prompts": {
+    "dcab21f421242be1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d0de6-9c4f-7f40-946b-6f54df6e3970",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Keshmiri <samkeshmiri94@gmail.com>",
+      "messages": [],
+      "total_additions": 178,
+      "total_deletions": 80,
+      "accepted_lines": 178,
+      "overriden_lines": 0
+    }
+  }
+}
