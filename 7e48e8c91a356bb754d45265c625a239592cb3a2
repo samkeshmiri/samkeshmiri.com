@@ -1,0 +1,23 @@
+src/data/books.js
+  dcab21f421242be1 513-517,519
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "7e48e8c91a356bb754d45265c625a239592cb3a2",
+  "prompts": {
+    "dcab21f421242be1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d0de6-9c4f-7f40-946b-6f54df6e3970",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Keshmiri <samkeshmiri94@gmail.com>",
+      "messages": [],
+      "total_additions": 7,
+      "total_deletions": 0,
+      "accepted_lines": 6,
+      "overriden_lines": 1
+    }
+  }
+}
