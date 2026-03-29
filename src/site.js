@@ -71,10 +71,12 @@ function navigate(view) {
 
 function render(view) {
   if (view === "books") {
+    viewRoot.classList.add("content-card__body--books");
     viewRoot.replaceChildren(createBooksSection());
     return;
   }
 
+  viewRoot.classList.remove("content-card__body--books");
   viewRoot.replaceChildren(
     createBio({
       onShowBooks: () => navigate("books"),

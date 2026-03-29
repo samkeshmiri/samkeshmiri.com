@@ -507,6 +507,7 @@ export const books = [
     title: "An Elegant Puzzle",
     author: "Will Larson",
     year: "2019",
+    wikiUrl: "https://blog.pragmaticengineer.com/an-elegant-puzzle-book-review",
     coverImageUrl:
       "https://books.google.com/books/content?id=SRnBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
   },
@@ -514,6 +515,7 @@ export const books = [
     title: "The Dark Forest Anthology of the Internet",
     author: "Yancey Strickler and The Dark Forest Collective",
     year: "2024",
+    wikiUrl: "https://www.ystrickler.com/start-darkforest",
     coverImageUrl:
       "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1712771217i/211147362.jpg",
   },

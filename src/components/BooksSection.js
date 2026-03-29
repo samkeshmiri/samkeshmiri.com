@@ -6,22 +6,13 @@ export function createBooksSection() {
     className: "section section--books",
     attrs: { id: "reading" },
   });
-  const heading = createElement("div", { className: "section-heading" });
-  const headingCopy = createElement("div");
-  const eyebrow = createElement("p", {
-    className: "eyebrow",
-    text: "Books",
-  });
   const list = createElement("ul", { className: "reading-list" });
-
-  headingCopy.append(eyebrow);
-  heading.append(headingCopy);
 
   [...books].reverse().forEach((book) => {
     list.append(createBookItem(book));
   });
 
-  section.append(heading, list);
+  section.append(list);
   return section;
 }
 
