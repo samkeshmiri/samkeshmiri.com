@@ -510,4 +510,11 @@ export const books = [
     coverImageUrl:
       "https://books.google.com/books/content?id=SRnBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
   },
+  {
+    title: "The Dark Forest Anthology of the Internet",
+    author: "Yancey Strickler and The Dark Forest Collective",
+    year: "2024",
+    coverImageUrl:
+      "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1712771217i/211147362.jpg",
+  },
 ];
