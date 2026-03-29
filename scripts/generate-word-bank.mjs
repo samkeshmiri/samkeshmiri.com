@@ -29,6 +29,7 @@ const wordBank = [...new Map(
     .filter(({ definition }) => !blockedDefinitionPattern.test(definition))
     .filter(({ definition }) => !blockedCitationPattern.test(definition))
     .filter(({ definition }) => !blockedGrammarPattern.test(definition))
+    .filter(({ word, definition }) => !isDerivedWordFamilyDefinition(word, definition))
     .filter(({ definition }) => !/\d/.test(definition))
     .filter(({ definition }) => !/--/.test(definition))
     .filter(({ definition }) => !/Note:/.test(definition))
@@ -54,6 +55,103 @@ function cleanDefinition(definition) {
     .replace(/\s*Syn\..*$/i, "")
     .replace(/\s*Cf\..*$/i, "")
     .trim();
+}
+
+function isDerivedWordFamilyDefinition(word, definition) {
+  const reference = extractReferenceWord(definition);
+
+  if (!reference || !sharesStem(word, reference)) {
+    return false;
+  }
+
+  const boundaryMatch = definition.match(
+    /^(?:Of or pertaining to|Pertaining to|Relating to|Having the form of|Of the nature of|Resembling)\s+.+?(?<boundary>[.;]|$)/i,
+  );
+  const tail = boundaryMatch
+    ? definition.slice(boundaryMatch[0].length).trim()
+    : "";
+
+  if (!tail) {
+    return true;
+  }
+
+  const tailSentences = tail
+    .replace(/^;\s*/, "")
+    .split(".")
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+
+  return tailSentences.length > 0
+    && tailSentences.every((sentence) => isDependentTailSentence(sentence, word, reference));
+}
+
+function extractReferenceWord(definition) {
+  const match = definition.match(
+    /^(?:Of or pertaining to|Pertaining to|Relating to|Having the form of|Of the nature of|Resembling)\s+(.+?)(?:[.;]|$)/i,
+  );
+
+  if (!match) {
+    return null;
+  }
+
+  const reference = match[1]
+    .replace(/^(?:an?|the)\s+/i, "")
+    .split(/\s+(?:or|and)\s+/i)[0]
+    .split(/\s+/)[0]
+    .replace(/[^a-z-]/gi, "");
+
+  return reference || null;
+}
+
+function isDependentTailSentence(sentence, word, reference) {
+  if (/^(?:as,|see\b|cf\.\b)/i.test(sentence)) {
+    return true;
+  }
+
+  if (/^[A-Z][A-Za-z.'&-]*(?:\s+[A-Z][A-Za-z.'&-]*)*\.?$/.test(sentence)) {
+    return true;
+  }
+
+  const [firstToken = ""] = sentence.split(/\s+/);
+  const firstWord = normalizeWord(firstToken);
+
+  if (firstWord && sharesStem(firstWord, word)) {
+    return true;
+  }
+
+  const havingMatch = sentence.match(/^having\s+([A-Za-z-]+)/i);
+  if (havingMatch && sharesStem(havingMatch[1], reference)) {
+    return true;
+  }
+
+  return false;
+}
+
+function sharesStem(left, right) {
+  const normalizedLeft = normalizeWord(left);
+  const normalizedRight = normalizeWord(right);
+
+  if (!normalizedLeft || !normalizedRight) {
+    return false;
+  }
+
+  const prefixLength = getCommonPrefixLength(normalizedLeft, normalizedRight);
+  return prefixLength >= 5
+    && prefixLength / Math.min(normalizedLeft.length, normalizedRight.length) >= 0.6;
+}
+
+function normalizeWord(word) {
+  return word.toLowerCase().replace(/[^a-z]/g, "");
+}
+
+function getCommonPrefixLength(left, right) {
+  let index = 0;
+
+  while (index < left.length && index < right.length && left[index] === right[index]) {
+    index += 1;
+  }
+
+  return index;
 }
 
 function hash(text) {

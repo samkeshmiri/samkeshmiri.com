@@ -58,10 +58,6 @@ export const wordBank = [
     "definition": "One who maneuvers. This charming widow Beaumont is a nanoeuvrer. We can't well make an English word of it. Miss Edgeworth."
   },
   {
-    "word": "racemiform",
-    "definition": "Having the form of a raceme. Gray."
-  },
-  {
     "word": "abawed",
     "definition": "Astonished; abashed. Chaucer."
   },
@@ -262,10 +258,6 @@ export const wordBank = [
     "definition": "Resembling an ass; asinine; stupid or obstinate. Such . . . appear to be of the assich kind . . . Udall."
   },
   {
-    "word": "ganglial",
-    "definition": "Relating to a ganglion; ganglionic."
-  },
-  {
     "word": "pipevine",
     "definition": "The Dutchman's pipe. See under Dutchman."
   },
@@ -292,10 +284,6 @@ export const wordBank = [
   {
     "word": "vicine",
     "definition": "Near; neighboring; vicinal. Glanvill. An alkaloid ex tracted from the seeds of the vetch (Vicia sativa) as a white crystalline substance."
-  },
-  {
-    "word": "ethnologic",
-    "definition": "Of or pertaining to ethnology."
   },
   {
     "word": "gourmand",
@@ -348,10 +336,6 @@ export const wordBank = [
   {
     "word": "tardation",
     "definition": "The act of retarding, or delaying; retardation."
-  },
-  {
-    "word": "reportorial",
-    "definition": "Of or pertaining to a reporter or reporters; as, the reportorial staff of a newspaper."
   },
   {
     "word": "village",
@@ -446,10 +430,6 @@ export const wordBank = [
     "definition": "Having the form or figure of an egg; egg-shaped; as, an oviform leaf."
   },
   {
-    "word": "anginous",
-    "definition": "Pertaining to angina or angina pectoris."
-  },
-  {
     "word": "ignobly",
     "definition": "In an ignoble manner; basely."
   },
@@ -530,10 +510,6 @@ export const wordBank = [
     "definition": "The office of a regent; regency."
   },
   {
-    "word": "ratitate",
-    "definition": "Of or pertaining to the Ratitæ."
-  },
-  {
     "word": "reinless",
     "definition": "Not having, or not governed by, reins; hence, not checked or restrained."
   },
@@ -596,10 +572,6 @@ export const wordBank = [
   {
     "word": "bracketing",
     "definition": "A series or group of brackets; brackets, collectively."
-  },
-  {
-    "word": "apostrophic",
-    "definition": "Pertaining to an apostrophe, grammatical or rhetorical."
   },
   {
     "word": "widewhere",
@@ -684,10 +656,6 @@ export const wordBank = [
   {
     "word": "actuator",
     "definition": "One who actuates, or puts into action. Melville."
-  },
-  {
-    "word": "eudiometric",
-    "definition": "Of or pertaining to a eudiometer; as, eudiometrical experiments or results."
   },
   {
     "word": "gaming",
@@ -954,10 +922,6 @@ export const wordBank = [
     "definition": "One of the two great systems of religious belief in Japan. Its essence is ancestor worship, and sacrifice to dead heroes."
   },
   {
-    "word": "thecal",
-    "definition": "Of or pertaining to a theca; as, a thecal abscess."
-  },
-  {
     "word": "proke",
     "definition": "To poke; to thrust. Holland."
   },
@@ -984,10 +948,6 @@ export const wordBank = [
   {
     "word": "commuter",
     "definition": "One who commutes; especially, one who commutes in traveling."
-  },
-  {
-    "word": "imperatival",
-    "definition": "Of or pertaining to the imperative mood."
   },
   {
     "word": "feldspathic",
@@ -1044,10 +1004,6 @@ export const wordBank = [
   {
     "word": "strictly",
     "definition": "In a strict manner; closely; precisely."
-  },
-  {
-    "word": "chancrous",
-    "definition": "Of the nature of a chancre; having chancre."
   },
   {
     "word": "ambiguously",
@@ -1238,10 +1194,6 @@ export const wordBank = [
     "definition": "A hoisting apparatus; an elevator; a crane; a lift."
   },
   {
-    "word": "geologic",
-    "definition": "Of or pertaining to geology, or the science of the earth."
-  },
-  {
     "word": "martite",
     "definition": "Iron sesquioxide in isometric form, probably a pseudomorph after magnetite."
   },
@@ -1292,10 +1244,6 @@ export const wordBank = [
   {
     "word": "modist",
     "definition": "One who follows the fashion."
-  },
-  {
-    "word": "thermolytic",
-    "definition": "Of or pertaining to thermolysis."
   },
   {
     "word": "acarine",
@@ -2010,10 +1958,6 @@ export const wordBank = [
     "definition": "The act of yawning or gaping. Addison."
   },
   {
-    "word": "narcissine",
-    "definition": "Of or pertaining to Narcissus."
-  },
-  {
     "word": "signality",
     "definition": "The quality or state of being signal or remarkable. Sir T. Browne."
   },
@@ -2072,10 +2016,6 @@ export const wordBank = [
   {
     "word": "sphenogram",
     "definition": "A cuneiform, or arrow-headed, character."
-  },
-  {
-    "word": "cerebellar",
-    "definition": "Pertaining to the cerebellum."
   },
   {
     "word": "embracive",
@@ -2162,10 +2102,6 @@ export const wordBank = [
     "definition": "Arranged in a raceme, or in racemes."
   },
   {
-    "word": "siphuncular",
-    "definition": "Of or pertaining to the siphuncle."
-  },
-  {
     "word": "veinal",
     "definition": "Pertaining to veins; venous."
   },
@@ -2240,10 +2176,6 @@ export const wordBank = [
   {
     "word": "rossel",
     "definition": "Light land; rosland. Mortimer."
-  },
-  {
-    "word": "siphonic",
-    "definition": "Of or pertaining to a siphon."
   },
   {
     "word": "mottoed",
@@ -2500,10 +2432,6 @@ export const wordBank = [
   {
     "word": "nostalgia",
     "definition": "Homesickness; esp., a severe and sometimes fatal form of melancholia, due to homesickness."
-  },
-  {
-    "word": "pyrrhonean",
-    "definition": "Of or pertaining to pyrrhonism."
   },
   {
     "word": "overtire",
@@ -2862,20 +2790,12 @@ export const wordBank = [
     "definition": "Thin and flat; scalelike; lamellar."
   },
   {
-    "word": "hypsometric",
-    "definition": "Of or pertaining to hypsometry."
-  },
-  {
     "word": "turgesce",
     "definition": "To become turgid; to swell or be inflated."
   },
   {
     "word": "mussite",
     "definition": "A variety of pyroxene, from the Mussa Alp in Piedmont; diopside."
-  },
-  {
-    "word": "dentinal",
-    "definition": "Of or pertaining to dentine."
   },
   {
     "word": "reclude",
@@ -2920,5 +2840,85 @@ export const wordBank = [
   {
     "word": "vidual",
     "definition": "Of or pertaining to the state of a widow; widowed. Jer. Taylor."
+  },
+  {
+    "word": "dereling",
+    "definition": "Darling. Chaucer. Darling. Chaucer."
+  },
+  {
+    "word": "tretis",
+    "definition": "A treatise; also, a treaty. Chaucer. Long and well-proportioned; nicely made; pretty. \"Her nose tretys.\" Chaucer."
+  },
+  {
+    "word": "enniche",
+    "definition": "To place in a niche. Sterne."
+  },
+  {
+    "word": "educability",
+    "definition": "Capability of being educated."
+  },
+  {
+    "word": "hierotheca",
+    "definition": "A receptacle for sacred objects."
+  },
+  {
+    "word": "trapes",
+    "definition": "A slattern; an idle, sluttish, or untidy woman. To go about in an idle or slatternly fashion; to trape; to traipse. Thackeray."
+  },
+  {
+    "word": "foxlike",
+    "definition": "Resembling a fox in his characteristic qualities; cunning; artful; foxy."
+  },
+  {
+    "word": "convicinity",
+    "definition": "Immediate vicinity; neighborhood. The convicinity and contiguity of the two parishes. T. Warton."
+  },
+  {
+    "word": "vitriolic",
+    "definition": "Of or pertaining to vitriol; derived from, or resembling, vitriol; vitriolous; as, a vitriolic taste."
+  },
+  {
+    "word": "underbred",
+    "definition": "Not thoroughly bred; ill-bred; as, an underbred fellow. Goldsmith."
+  },
+  {
+    "word": "diseased",
+    "definition": "Afflicted with disease. It is my own diseased imagination that torments me. W. Irving."
+  },
+  {
+    "word": "outrive",
+    "definition": "To river; to sever. Fairfax."
+  },
+  {
+    "word": "trihedral",
+    "definition": "Having three sides or faces; thus, a trihedral angle is a solid angle bounded by three plane angles."
+  },
+  {
+    "word": "soullessly",
+    "definition": "In a soulless manner. Tylor."
+  },
+  {
+    "word": "atabal",
+    "definition": "A kettledrum; a kind of tabor, used by the Moors. Croly."
+  },
+  {
+    "word": "opinionable",
+    "definition": "Being, or capable of being, a matter of opinion; that can be thought; not positively settled; as, an opinionable doctrine. C. J. Ellicott."
+  },
+  {
+    "word": "decampment",
+    "definition": "Departure from a camp; a marching off."
+  },
+  {
+    "word": "ordurous",
+    "definition": "Of or pertaining to ordure; filthy. Drayton."
+  },
+  {
+    "word": "unwild",
+    "definition": "To tame; to subdue. Sylvester."
+  },
+  {
+    "word": "unbenumb",
+    "definition": "To relieve of numbness; to restore sensation to."
   }
 ];
