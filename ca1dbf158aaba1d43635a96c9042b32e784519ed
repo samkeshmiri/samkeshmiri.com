@@ -1,0 +1,27 @@
+src/components/BooksSection.js
+  dcab21f421242be1 15
+styles.css
+  dcab21f421242be1 167-170,276-277,363-364
+src/site.js
+  dcab21f421242be1 74,79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "ca1dbf158aaba1d43635a96c9042b32e784519ed",
+  "prompts": {
+    "dcab21f421242be1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d0de6-9c4f-7f40-946b-6f54df6e3970",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Keshmiri <samkeshmiri94@gmail.com>",
+      "messages": [],
+      "total_additions": 15,
+      "total_deletions": 11,
+      "accepted_lines": 15,
+      "overriden_lines": 0
+    }
+  }
+}
