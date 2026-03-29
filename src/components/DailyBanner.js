@@ -43,6 +43,15 @@ function createBannerContent(items) {
         );
       }
     });
+
+    if (repeatIndex < 3) {
+      content.append(
+        createElement("span", {
+          className: "daily-banner__spacer",
+          attrs: { "aria-hidden": "true" },
+        }),
+      );
+    }
   }
 
   return content;

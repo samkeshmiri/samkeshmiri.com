@@ -92,6 +92,10 @@ a {
   color: rgba(31, 81, 72, 0.5);
 }
 
+.daily-banner__spacer {
+  flex: 0 0 6rem;
+}
+
 .page {
   max-width: 980px;
   margin: 0 auto;
