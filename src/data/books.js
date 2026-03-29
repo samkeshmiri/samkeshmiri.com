@@ -503,4 +503,11 @@ export const books = [
     coverImageUrl:
       "https://books.google.com/books/content?id=4-tEAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
   },
+  {
+    title: "An Elegant Puzzle",
+    author: "Will Larson",
+    year: "2019",
+    coverImageUrl:
+      "https://books.google.com/books/content?id=SRnBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+  },
 ];
