@@ -39,16 +39,6 @@ function createBannerContent(items) {
       const isLoopBoundary =
         repeatIndex === CONTENT_REPEAT_COUNT - 1 && isLastItemInRepeat;
 
-      content.append(
-        createElement("span", {
-          className: isLoopBoundary
-            ? "daily-banner__separator daily-banner__separator--loop-boundary"
-            : "daily-banner__separator",
-          text: "-",
-          attrs: { "aria-hidden": "true" },
-        }),
-      );
-
       if (isLastItemInRepeat) {
         content.append(
           createElement("span", {

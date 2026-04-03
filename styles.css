@@ -75,8 +75,7 @@ a {
   padding: 10px 0;
 }
 
-.daily-banner__item,
-.daily-banner__separator {
+.daily-banner__item {
   margin: 0;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
@@ -85,11 +84,6 @@ a {
 
 .daily-banner__item {
   color: var(--accent-hover);
-}
-
-.daily-banner__separator {
-  padding: 0 18px;
-  color: rgba(31, 81, 72, 0.5);
 }
 
 .daily-banner__spacer {
@@ -345,8 +339,7 @@ a {
     padding: 24px 20px 56px;
   }
 
-  .daily-banner__item,
-  .daily-banner__separator {
+  .daily-banner__item {
     font-size: 0.74rem;
     letter-spacing: 0.06em;
   }
@@ -401,7 +394,6 @@ a {
     display: none;
   }
 
-  .daily-banner__separator--loop-boundary,
   .daily-banner__spacer--loop-boundary {
     display: none;
   }
