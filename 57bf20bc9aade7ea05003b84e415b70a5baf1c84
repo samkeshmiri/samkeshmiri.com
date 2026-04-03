@@ -1,0 +1,23 @@
+styles.css
+  e8c35999fca4c24a 78,342
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "57bf20bc9aade7ea05003b84e415b70a5baf1c84",
+  "prompts": {
+    "e8c35999fca4c24a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d5563-0641-7d40-afd3-2ddcf1587434",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Keshmiri",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 20,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
