@@ -1,6 +1,8 @@
 import { getDailyItems } from "../utils/dailyItems.js";
 import { createElement } from "../utils/dom.js";
 
+const CONTENT_REPEAT_COUNT = 4;
+
 export function createDailyBanner() {
   const items = getDailyItems();
   const banner = createElement("section", {
@@ -24,7 +26,7 @@ export function createDailyBanner() {
 function createBannerContent(items) {
   const content = createElement("div", { className: "daily-banner__content" });
 
-  for (let repeatIndex = 0; repeatIndex < 4; repeatIndex += 1) {
+  Array.from({ length: CONTENT_REPEAT_COUNT }).forEach((_, repeatIndex) => {
     items.forEach((item, itemIndex) => {
       const entry = createElement("p", {
         className: "daily-banner__item",
@@ -33,26 +35,32 @@ function createBannerContent(items) {
 
       content.append(entry);
 
-      if (!(repeatIndex === 3 && itemIndex === items.length - 1)) {
+      const isLastItemInRepeat = itemIndex === items.length - 1;
+      const isLoopBoundary =
+        repeatIndex === CONTENT_REPEAT_COUNT - 1 && isLastItemInRepeat;
+
+      content.append(
+        createElement("span", {
+          className: isLoopBoundary
+            ? "daily-banner__separator daily-banner__separator--loop-boundary"
+            : "daily-banner__separator",
+          text: "-",
+          attrs: { "aria-hidden": "true" },
+        }),
+      );
+
+      if (isLastItemInRepeat) {
         content.append(
           createElement("span", {
-            className: "daily-banner__separator",
-            text: "-",
+            className: isLoopBoundary
+              ? "daily-banner__spacer daily-banner__spacer--loop-boundary"
+              : "daily-banner__spacer",
             attrs: { "aria-hidden": "true" },
           }),
         );
       }
     });
-
-    if (repeatIndex < 3) {
-      content.append(
-        createElement("span", {
-          className: "daily-banner__spacer",
-          attrs: { "aria-hidden": "true" },
-        }),
-      );
-    }
-  }
+  });
 
   return content;
 }

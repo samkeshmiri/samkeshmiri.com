@@ -400,6 +400,11 @@ a {
   .daily-banner__content[aria-hidden="true"] {
     display: none;
   }
+
+  .daily-banner__separator--loop-boundary,
+  .daily-banner__spacer--loop-boundary {
+    display: none;
+  }
 }
 
 @keyframes daily-banner-scroll {
