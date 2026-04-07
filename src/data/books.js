@@ -519,4 +519,12 @@ export const books = [
     coverImageUrl:
       "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1712771217i/211147362.jpg",
   },
+  {
+    title: "The Dispossessed",
+    author: "Ursula K. Le Guin",
+    year: "1974",
+    wikiUrl: "https://en.wikipedia.org/wiki/The_Dispossessed",
+    coverImageUrl:
+      "https://books.google.com/books/content?id=tlhFtmTixvwC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+  },
 ];
