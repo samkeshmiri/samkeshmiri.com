@@ -1,0 +1,23 @@
+src/data/books.js
+  0e106cc45ee56c69 522-529
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "1f1ba60103113f5b6eedebb5b6f7f643f941e03c",
+  "prompts": {
+    "0e106cc45ee56c69": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d672f-ad26-7303-9ff3-7dd8839678b4",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Sam Keshmiri",
+      "messages": [],
+      "total_additions": 8,
+      "total_deletions": 0,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}
