@@ -527,4 +527,20 @@ export const books = [
     coverImageUrl:
       "https://books.google.com/books/content?id=tlhFtmTixvwC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
   },
+  {
+    title: "Lost Horizon",
+    author: "James Hilton",
+    year: "1933",
+    wikiUrl: "https://en.wikipedia.org/wiki/Lost_Horizon",
+    coverImageUrl:
+      "https://books.google.com/books/content?id=ATr3BgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+  },
+  {
+    title: "Thinking in Systems: A Primer",
+    author: "Donella Meadows",
+    year: "2008",
+    wikiUrl: "https://en.wikipedia.org/wiki/Thinking_In_Systems%3A_A_Primer",
+    coverImageUrl:
+      "https://books.google.com/books/content?id=JSgOSP1qklUC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+  },
 ];
