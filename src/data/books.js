@@ -543,4 +543,11 @@ export const books = [
     coverImageUrl:
       "https://books.google.com/books/content?id=JSgOSP1qklUC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
   },
+  {
+    title: "Cryptocommunism",
+    author: "Mark Alizart",
+    year: "2020",
+    coverImageUrl:
+      "https://books.google.com/books/content?id=ZRgjzAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+  },
 ];
