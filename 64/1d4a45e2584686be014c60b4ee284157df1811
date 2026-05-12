@@ -1,0 +1,25 @@
+styles.css
+  0b41c205a8beb835 187
+src/data/books.js
+  0b41c205a8beb835 553-560
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "641d4a45e2584686be014c60b4ee284157df1811",
+  "prompts": {
+    "0b41c205a8beb835": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e1bd8-3176-72d1-b0f6-b79d1ec88f34",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Sam Keshmiri",
+      "messages": [],
+      "total_additions": 9,
+      "total_deletions": 1,
+      "accepted_lines": 9,
+      "overriden_lines": 0
+    }
+  }
+}
