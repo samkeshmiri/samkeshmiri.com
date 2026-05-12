@@ -184,7 +184,7 @@ a {
 }
 
 .hero__title {
-  font-size: clamp(2.3rem, 5.2vw, 4.2rem);
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
   line-height: 0.92;
 }
 

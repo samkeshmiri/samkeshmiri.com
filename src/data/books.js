@@ -550,4 +550,12 @@ export const books = [
     coverImageUrl:
       "https://books.google.com/books/content?id=ZRgjzAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
   },
+  {
+    title: "Naked Lunch",
+    author: "William S. Burroughs",
+    year: "1959",
+    wikiUrl: "https://en.wikipedia.org/wiki/Naked_Lunch",
+    coverImageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/b/b8/NakedLunch1stedition.jpg",
+  },
 ];
